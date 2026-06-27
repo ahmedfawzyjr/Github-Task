@@ -1,7 +1,7 @@
-﻿* bug-fix-revert
-  bug-fix-typo
-  main
-  remotes/origin/HEAD -> origin/main
-  remotes/origin/bug-fix-revert
-  remotes/origin/bug-fix-typo
-  remotes/origin/main
+  bug-fix-revert                bb63dd7 Revert "Fix typo: update copyright year to 2023"
+  bug-fix-typo                  872f2bb Fix typo: update copyright year to 2023
+* main                          b2b129b Update Code of Conduct attribution and simple-interest script username
+  remotes/origin/HEAD           -> origin/main
+  remotes/origin/bug-fix-revert bb63dd7 Revert "Fix typo: update copyright year to 2023"
+  remotes/origin/bug-fix-typo   872f2bb Fix typo: update copyright year to 2023
+  remotes/origin/main           b2b129b Update Code of Conduct attribution and simple-interest script username
