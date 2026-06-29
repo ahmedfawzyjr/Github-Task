@@ -21,35 +21,6 @@ def detect_emotion():
 
     result = emotion_detector(text_to_analyze)
 
-    # Fallback to mock data for demonstration if the live API is offline/unreachable
-    if result["dominant_emotion"] is None:
-        text_lower = text_to_analyze.lower()
-        if "glad" in text_lower or "happy" in text_lower or "love" in text_lower:
-            result = {
-                'anger': 0.0, 'disgust': 0.0, 'fear': 0.0,
-                'joy': 0.95, 'sadness': 0.05, 'dominant_emotion': 'joy'
-            }
-        elif "mad" in text_lower or "angry" in text_lower:
-            result = {
-                'anger': 0.95, 'disgust': 0.0, 'fear': 0.05,
-                'joy': 0.0, 'sadness': 0.0, 'dominant_emotion': 'anger'
-            }
-        elif "disgust" in text_lower:
-            result = {
-                'anger': 0.05, 'disgust': 0.9, 'fear': 0.0,
-                'joy': 0.0, 'sadness': 0.05, 'dominant_emotion': 'disgust'
-            }
-        elif "sad" in text_lower:
-            result = {
-                'anger': 0.0, 'disgust': 0.0, 'fear': 0.05,
-                'joy': 0.0, 'sadness': 0.95, 'dominant_emotion': 'sadness'
-            }
-        elif "afraid" in text_lower or "fear" in text_lower:
-            result = {
-                'anger': 0.0, 'disgust': 0.05, 'fear': 0.9,
-                'joy': 0.0, 'sadness': 0.05, 'dominant_emotion': 'fear'
-            }
-
     if result["dominant_emotion"] is None:
         return "Invalid text! Please try again!"
 
