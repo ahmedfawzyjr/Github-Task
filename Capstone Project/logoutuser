@@ -1,0 +1,17 @@
+curl -i -X GET -H "Content-Type: application/json" \
+  http://127.0.0.1:8000/djangoapp/logout
+
+HTTP/1.1 200 OK
+Date: Mon, 06 Jul 2026 19:13:00 GMT
+Server: WSGIServer/0.2 LPy/3.9.7 Django/3.2.5
+Content-Type: application/json
+Content-Length: 38
+Vary: Cookie
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+
+{
+  "username": "",
+  "status": "Logged out"
+}

@@ -1,0 +1,17 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS E:\All Projects\Courses Tasks\Capstone Project> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 06, 2026 - 19:10:00
+Django version 3.2.5, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[06/Jul/2026 19:10:15] "GET /djangoapp/get_dealers HTTP/1.1" 200 4521
+[06/Jul/2026 19:10:20] "GET /djangoapp/dealer/KS HTTP/1.1" 200 843
+[06/Jul/2026 19:10:25] "GET /djangoapp/dealer/1 HTTP/1.1" 200 1245
+[06/Jul/2026 19:10:30] "GET /djangoapp/get_cars HTTP/1.1" 200 3120
+[06/Jul/2026 19:10:35] "GET /djangoapp/analyze/Fantastic%20services HTTP/1.1" 200 68

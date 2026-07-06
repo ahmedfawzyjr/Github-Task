@@ -1,0 +1,14 @@
+curl -X GET http://127.0.0.1:8000/djangoapp/dealer/1
+
+{
+  "id": 1,
+  "city": "El Paso",
+  "state": "Texas",
+  "st": "TX",
+  "address": "3 Ecker Junction",
+  "zip": "79905",
+  "lat": 31.7587,
+  "long": -106.4869,
+  "short_name": "Holdlamight",
+  "full_name": "Holdlamight Car Dealership"
+}

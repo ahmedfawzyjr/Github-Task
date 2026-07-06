@@ -1,0 +1,16 @@
+curl -X GET http://127.0.0.1:8000/djangoapp/reviews/dealer/15
+
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "dealership": 15,
+    "review": "Great customer service and very friendly staff!",
+    "purchase": true,
+    "purchase_date": "2026-06-15",
+    "car_make": "Toyota",
+    "car_model": "Camry",
+    "car_year": 2022,
+    "sentiment": "positive"
+  }
+]
