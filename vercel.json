@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/Capstone Project/server/frontend/static/DealersJson.html" },
+    { "source": "/about", "destination": "/Capstone Project/server/frontend/static/About.html" },
+    { "source": "/contact", "destination": "/Capstone Project/server/frontend/static/Contact.html" },
+    { "source": "/register", "destination": "/Capstone Project/server/frontend/static/Register.html" },
+    { "source": "/djangoapp/get_cars", "destination": "/Capstone Project/server/frontend/static/CarsJson.html" },
+    { "source": "/djangoapp/get_dealers", "destination": "/Capstone Project/server/frontend/static/DealersJson.html" },
+    { "source": "/djangoapp/dealer/:id", "destination": "/Capstone Project/server/frontend/static/DealerDetailJson.html" },
+    { "source": "/djangoapp/reviews/dealer/:id", "destination": "/Capstone Project/server/frontend/static/DealerReviewJson.html" },
+    { "source": "/djangoapp/analyze/:text", "destination": "/Capstone Project/server/frontend/static/SentimentJson.html" }
+  ]
+}
