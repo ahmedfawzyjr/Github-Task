@@ -5,15 +5,15 @@
   ],
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/public/index.html" },
-    { "source": "/about", "destination": "/public/About.html" },
-    { "source": "/contact", "destination": "/public/Contact.html" },
-    { "source": "/register", "destination": "/public/Register.html" },
-    { "source": "/djangoapp/get_cars", "destination": "/public/CarsJson.html" },
-    { "source": "/djangoapp/get_dealers", "destination": "/public/DealersJson.html" },
-    { "source": "/djangoapp/dealer/KS", "destination": "/public/DealersByStateJson.html" },
-    { "source": "/djangoapp/dealer/:id", "destination": "/public/DealerDetailJson.html" },
-    { "source": "/djangoapp/reviews/dealer/:id", "destination": "/public/DealerReviewJson.html" },
-    { "source": "/djangoapp/analyze/:text", "destination": "/public/SentimentJson.html" }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/About.html" },
+    { "source": "/contact", "destination": "/Contact.html" },
+    { "source": "/register", "destination": "/Register.html" },
+    { "source": "/djangoapp/get_cars", "destination": "/CarsJson.html" },
+    { "source": "/djangoapp/get_dealers", "destination": "/DealersJson.html" },
+    { "source": "/djangoapp/dealer/KS", "destination": "/DealersByStateJson.html" },
+    { "source": "/djangoapp/dealer/:id", "destination": "/DealerDetailJson.html" },
+    { "source": "/djangoapp/reviews/dealer/:id", "destination": "/DealerReviewJson.html" },
+    { "source": "/djangoapp/analyze/:text", "destination": "/SentimentJson.html" }
   ]
 }
