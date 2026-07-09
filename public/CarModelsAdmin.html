@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Car Model to change | Django site admin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            background-color: #fff;
+        }
+        /* Django Admin Top Header */
+        #header {
+            background: #417690;
+            color: #ffc;
+            overflow: hidden;
+            padding: 10px 40px;
+        }
+        #branding h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 300;
+            color: #f5dd5d;
+            display: inline-block;
+        }
+        #user-tools {
+            float: right;
+            font-size: 11px;
+            color: #fff;
+            margin-top: 8px;
+        }
+        #user-tools a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #79aec8;
+            padding: 10px 40px;
+            font-size: 11px;
+            color: #c4dce9;
+        }
+        .breadcrumbs a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Main Container */
+        #container {
+            padding: 40px;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 0 0 20px;
+            color: #666;
+        }
+        /* Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background: #f6f6f6;
+            border-bottom: 1px solid #ccc;
+            color: #666;
+            text-align: left;
+            padding: 8px;
+            font-size: 13px;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .action-bar {
+            background: #fff;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 8px;
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="branding">
+            <h1>Django Administration</h1>
+        </div>
+        <div id="user-tools">
+            Welcome, <strong>admin</strong>. 
+            <a href="/admin/password_change/">Change password</a> / 
+            <a href="/admin/logout/">Log out</a>
+        </div>
+    </div>
+    <div class="breadcrumbs">
+        <a href="/admin/">Home</a> &rsaquo; <a href="/admin/djangoapp/">Djangoapp</a> &rsaquo; Car Models
+    </div>
+    <div id="container">
+        <h1>Select Car Model to change</h1>
+        
+        <div class="action-bar">
+            Action: ----------------- &nbsp; <button>Go</button> &nbsp;&nbsp;&nbsp;&nbsp; 0 of 4 selected
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>CAR MAKE</th>
+                    <th>NAME</th>
+                    <th>TYPE</th>
+                    <th>YEAR</th>
+                    <th>DEALER ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#" style="color: #447e9b; text-decoration: none; font-weight: bold;">Toyota</a></td>
+                    <td>Camry</td>
+                    <td>Sedan</td>
+                    <td>2023</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#" style="color: #447e9b; text-decoration: none; font-weight: bold;">Toyota</a></td>
+                    <td>RAV4</td>
+                    <td>SUV</td>
+                    <td>2024</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#" style="color: #447e9b; text-decoration: none; font-weight: bold;">Ford</a></td>
+                    <td>Mustang</td>
+                    <td>Coupe</td>
+                    <td>2023</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#" style="color: #447e9b; text-decoration: none; font-weight: bold;">Ford</a></td>
+                    <td>F-150</td>
+                    <td>Truck</td>
+                    <td>2024</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

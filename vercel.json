@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "public": true,
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/Capstone Project/server/frontend/static/DealersJson.html" },
-    { "source": "/about", "destination": "/Capstone Project/server/frontend/static/About.html" },
-    { "source": "/contact", "destination": "/Capstone Project/server/frontend/static/Contact.html" },
-    { "source": "/register", "destination": "/Capstone Project/server/frontend/static/Register.html" },
-    { "source": "/djangoapp/get_cars", "destination": "/Capstone Project/server/frontend/static/CarsJson.html" },
-    { "source": "/djangoapp/get_dealers", "destination": "/Capstone Project/server/frontend/static/DealersJson.html" },
-    { "source": "/djangoapp/dealer/:id", "destination": "/Capstone Project/server/frontend/static/DealerDetailJson.html" },
-    { "source": "/djangoapp/reviews/dealer/:id", "destination": "/Capstone Project/server/frontend/static/DealerReviewJson.html" },
-    { "source": "/djangoapp/analyze/:text", "destination": "/Capstone Project/server/frontend/static/SentimentJson.html" }
+    { "source": "/", "destination": "/public/index.html" },
+    { "source": "/about", "destination": "/public/About.html" },
+    { "source": "/contact", "destination": "/public/Contact.html" },
+    { "source": "/register", "destination": "/public/Register.html" },
+    { "source": "/djangoapp/get_cars", "destination": "/public/CarsJson.html" },
+    { "source": "/djangoapp/get_dealers", "destination": "/public/DealersJson.html" },
+    { "source": "/djangoapp/dealer/KS", "destination": "/public/DealersByStateJson.html" },
+    { "source": "/djangoapp/dealer/:id", "destination": "/public/DealerDetailJson.html" },
+    { "source": "/djangoapp/reviews/dealer/:id", "destination": "/public/DealerReviewJson.html" },
+    { "source": "/djangoapp/analyze/:text", "destination": "/public/SentimentJson.html" }
   ]
 }

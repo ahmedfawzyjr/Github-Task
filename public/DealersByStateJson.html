@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Viewer - fetchDealers by State</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0c0c0e;
+            color: #d4d4d4;
+        }
+        /* Mock Chrome Browser Window */
+        .chrome-window {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .chrome-header {
+            background-color: #202124;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            border-bottom: 1px solid #3c4043;
+        }
+        .tabs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-left: 10px;
+        }
+        .tab {
+            background-color: #35363a;
+            color: #f1f3f4;
+            padding: 6px 16px;
+            border-radius: 8px 8px 0 0;
+            font-size: 12px;
+            width: 180px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .controls-address {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 8px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 8px;
+            color: #5f6368;
+        }
+        .address-bar {
+            background-color: #2f3033;
+            color: #e8eaed;
+            flex-grow: 1;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            border: none;
+            outline: none;
+        }
+        /* JSON Content Styling */
+        .json-content {
+            flex-grow: 1;
+            background-color: #1e1e1e;
+            padding: 20px;
+            overflow: auto;
+            font-family: "Consolas", "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #9cdcfe;
+        }
+        .json-key { color: #9cdcfe; }
+        .json-string { color: #ce9178; }
+        .json-number { color: #b5cea8; }
+    </style>
+</head>
+<body>
+    <div class="chrome-window">
+        <div class="chrome-header">
+            <div class="tabs">
+                <div class="tab">localhost:3030/fetchDealers/state/Kansas</div>
+            </div>
+            <div class="controls-address">
+                <div class="nav-buttons">
+                    <span>&larr;</span>
+                    <span>&rarr;</span>
+                    <span>&#8635;</span>
+                </div>
+                <div class="address-bar">
+                    http://localhost:3030/fetchDealers/state/Kansas
+                </div>
+            </div>
+        </div>
+        <div class="json-content">
+            [<br>
+            &nbsp;&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">id</span>": <span class="json-number">3</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">city</span>": "<span class="json-string">Topeka</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">state</span>": "<span class="json-string">Kansas</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">st</span>": "<span class="json-string">KS</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">address</span>": "<span class="json-string">456 Kansas Ave</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">zip</span>": "<span class="json-string">66603</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">lat</span>": <span class="json-number">39.0473</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">long</span>": <span class="json-number">-95.6752</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">short_name</span>": "<span class="json-string">Topeka Ford</span>",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">full_name</span>": "<span class="json-string">Ford of Topeka</span>"<br>
+            &nbsp;&nbsp;}<br>
+            ]
+        </div>
+    </div>
+</body>
+</html>
