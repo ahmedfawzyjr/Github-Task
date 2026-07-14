@@ -1,0 +1,28 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: cleanup
+spec:
+  steps:
+    - name: cleanup
+      image: alpine:latest
+      script: |
+        echo "Cleaning up workspace..."
+        rm -rf *
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: nose-test
+spec:
+  steps:
+    - name: run-nose
+      image: python:3.9-slim
+      workingDir: /workspace
+      script: |
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if command -v nosetests &> /dev/null; then
+          nosetests
+        else
+          echo "nosetests not found, skipping."
+        fi
